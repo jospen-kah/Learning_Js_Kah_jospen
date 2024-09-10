@@ -194,6 +194,11 @@ border-radius: 10px;
   align-items: center;
 }
 
+.inc:hover{
+  background-color: white;
+  color:rgb(243, 81, 32)
+}
+
 .dec{
   border-style: solid;
   border-color: white;
