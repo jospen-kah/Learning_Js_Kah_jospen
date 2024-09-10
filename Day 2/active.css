@@ -335,7 +335,6 @@ left: 90%;
   position: absolute;
   left: 18%;
 }
-
-#carbon svg:hover{
-    border: 1px solid black;  
+#cnfrm-order:hover{
+    background-color:rgb(175, 53, 16) ;
 }
