@@ -1,9 +1,21 @@
+#head{
+    position: absolute;
+    height:470%;
+    width:20%;
+    background-color: rgba(251, 242, 247, 0.767);
+    left:45%;
+    padding-left:40px ;
+}
 .main{
     display: grid;
-    width:21%;
-    grid-template-columns: repeat(1 );
-   background-color: rgba(228, 223, 219, 0.767);
+    width:17%;
+   
+  
      /* border-style: dashed; */
+  }
+  #dessert{
+    padding-bottom: 20px;
+    margin-left: 35px;
   }
   
   .sub-class{
@@ -11,7 +23,8 @@
       width: 250px;
       height: 400px;
       display: inline-block;
-      margin:10px;
+      margin-top:-35px;
+      margin-left:30px ;
       /* border-style: dashed; */
   
   }
@@ -57,14 +70,15 @@
       font-weight: bolder;
   }
   #add-cart{
-      
-      
-      background-color: white;
-      top:60px;
-      width: 25%;
-      height:40%;
+      /* position:absolute; */
+      left:2%;
+      background-color: rgb(255, 255, 255);
+      top:437%;
+      width: 90%;
+      height:90%;
       border-radius: 10px;
      align-items: center;
+     margin-left: 35px;
   }
   #cart-number{
       text-align: left;
