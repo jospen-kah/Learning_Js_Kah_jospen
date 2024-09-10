@@ -1,0 +1,141 @@
+.main{
+    display: grid;
+    width:60%;
+    grid-template-columns: repeat(3 ,1fr);
+    opacity: 70%;
+    padding-top: 70px;
+   
+     /* border-style: dashed; */
+  }
+  
+  .sub-class{
+    
+      position: relative;
+      width: 250px;
+      height: 400px;
+      display: inline-block;
+      margin:10px;
+      /* border-style: dashed; */
+      margin-top: -20%;
+  
+  }
+  .price{
+      color:rgb(248, 166, 12);
+      font-weight: bolder;
+  }
+  img{
+      border-radius: 10px;
+      width: 251px;
+     
+  }
+  .cart{
+      border-radius: 20px;
+      background-color: white;
+      color:black;
+      border: 1px solid rgb(49, 46, 46);
+      width: 125px;
+      height: 30px;
+      text-align: center;
+      position:absolute;
+      transform:translateX(50%); 
+      top: 51%;
+      padding-top: 5px;
+      
+      
+      
+  }
+  p{
+      text-align:left;
+      margin-bottom: -12px;
+  }
+  body{
+      background-color: rgba(228, 223, 219, 0.767);
+      margin-left: 25px;
+  }
+  .name2{
+      color:rgb(90, 74, 74);
+  }
+  .name1{
+      color:rgb(20, 19, 19);
+      font-family: sans-serif;
+      font-size: large;
+      font-weight: bolder;
+  }
+  #add-cart{
+      position:absolute;
+      left:65%;
+      background-color: white;
+      top:60px;
+      width: 25%;
+      height:40%;
+      border-radius: 10px;
+     align-items: center;
+  }
+  #cart-number{
+      text-align: left;
+      color:brown;
+      font-weight:bolder;
+      font: 20px;
+      margin-left:10px;
+  }
+  #cake{
+      position:absolute;
+      left:30%;
+      top:60px;
+  }
+  #item{
+      position: absolute;
+      top:75%;
+      text-align: center;
+      left:15%;
+      color:rgb(90, 74, 74);
+  }
+.image{
+border-style: solid;
+border-color: rgb(243, 81, 32);
+width: 250px;
+border-radius: 10px;
+}
+.cart1{
+    border-radius: 20px;
+    background-color: rgb(243, 81, 32);
+    color:white;
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    position:absolute;
+    transform:translateX(50%); 
+    top: 53%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dec{
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    width:15px;
+    height: 15px;
+    position: absolute;
+    left:29%;
+    top:59%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inc{
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    width:15px;
+    height: 15px;
+    position: absolute;
+    left:62%;
+    top:59%;
+    justify-content: center;
+    align-items: center;
+}
