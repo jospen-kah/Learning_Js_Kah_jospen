@@ -1,4 +1,7 @@
-
+#main{
+    width: 25%;
+    height:70%; 
+}
 #add-cart{
     position:absolute;
     left:65%;

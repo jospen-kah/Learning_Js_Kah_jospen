@@ -1,0 +1,18 @@
+header{
+    width:100%;
+    height: 100px;
+    background-color: rgb(46, 42, 111);
+}
+
+#section-one, #section-two{
+    width:100%;
+    height: 500px;
+}
+
+#section-two{
+    background-color: rgb(46, 42, 111);
+}
+
+#section-one img{
+    width:10%;
+}
