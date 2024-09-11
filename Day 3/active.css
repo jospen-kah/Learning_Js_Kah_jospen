@@ -1,0 +1,130 @@
+body{
+    background: rgb(240, 209, 209);
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width:70%;
+    
+}
+.col-1{
+    background: hsla(237, 86%, 47%, 0.826);
+    border-radius: 20px;
+    height:400px;
+}
+.col-2{
+    position: absolute;
+    left:69%;
+    top:0%;
+    height:400px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+  padding-left: 20px;
+  background:white;
+    
+}
+.container{
+    position: absolute;
+    left: 30%;
+}
+#circle{
+  
+    width:40%;
+    height: 30%;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-left: 90px;
+    background-color: hsla(131, 66%, 8%, 0);
+    
+}
+p,h1,h2{
+    text-align: center;
+    color:white;
+}
+#circle span{
+    font-size:50px ;
+    color: white;
+    font-weight: bolder;
+}
+
+.mini-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.reactions{
+    /* border: 1px solid green; */
+    height:50px;
+    text-align: left ;
+    width:90%;
+    border-radius: 10px;
+    margin:.3em;
+ 
+    
+}
+#summary{
+    color:black;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+.reactions p{
+    position: relative;
+    color:black;
+    margin-left: -40%;
+}
+#continue{
+    position: absolute;
+    background-color: hsla(237, 86%, 47%, 0.826) ;
+    width: 85%;
+    height:30px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 25px;
+    top:80%;
+    left:10%;
+}
+svg{
+    position: absolute;
+    left:35%;
+}
+.react1{
+    background-color: rgba(191, 135, 125, 0.407);
+}
+.react2{
+    background-color: rgba(188, 202, 119, 0.407);
+}
+.react3{
+    background-color: rgba(125, 191, 140, 0.407);
+}
+.react4{
+    background-color: rgba(122, 162, 206, 0.409);
+}
+.tion1{
+    color: red;
+}
+.tion2{
+    color: rgb(232, 182, 34);
+}
+.tion3{
+    color: rgb(33, 192, 128);
+}
+.tion4{
+    color: blue;
+}
+.number{
+    position: absolute;
+    left:85%;
+    color:rgb(24, 24, 25);
+    font-weight: bolder;
+}
+.cent{
+    position: absolute;
+    font-weight: bolder;
+    color:rgb(84, 86, 87);
+    text-align: right ;
+    left:90%;
+}
