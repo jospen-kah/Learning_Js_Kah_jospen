@@ -1,0 +1,44 @@
+body{
+    font-size:1.125rem;
+    color:#707070;
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+    color: #312014;
+}
+h2{
+    font-size: 1.5rem;
+}
+.container{
+    max-width:980px;
+    width:90%;
+    margin:0 auto;
+    border: 1px solid magenta;
+}
+img{
+    max-width: 100%;
+}
+.columns{
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+}
+
+.col-bg{
+    background: rgb(36, 35, 35);
+    padding: 1em;
+    color:#fff;
+}
+.col-1{
+width:20%;
+}
+
+.col-2{
+width: 40%;
+}
+
+.col-3{
+width:70%;
+}

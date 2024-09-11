@@ -1,18 +1,26 @@
 header{
-    width:100%;
-    height: 100px;
-    background-color: rgb(46, 42, 111);
+    background: #2e354f;
+    color:#fff;
+    padding: 45px 0;
+}
+section{
+    padding:45px 0;
 }
 
-#section-one, #section-two{
-    width:100%;
-    height: 500px;
-}
 
+
+
+ img{
+    width:70%;
+}
+.container{
+    width:90%;
+    /* max-width: 500px; */
+    border : 2px solid magenta;
+    padding:5px;
+
+}
 #section-two{
-    background-color: rgb(46, 42, 111);
-}
-
-#section-one img{
-    width:10%;
+    background: #2e354f;
+    color:#fff
 }
