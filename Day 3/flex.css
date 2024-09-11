@@ -2,8 +2,19 @@ body{
     font-size:1.125rem;
     color:#707070;
     margin: 0;
+    background-color: pink;
+}
+ @media (min-width:4000px){
+    body{
+        background: purple;
+    }
 }
 
+ @media (min-width:2000px){
+    body{
+        background: orange;
+    }
+} 
 h1{
     font-size: 3rem;
     color: #312014;
