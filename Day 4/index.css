@@ -83,7 +83,7 @@ margin-top:.7em ;
     font-weight: bold;
     color: white;
     box-shadow: 5px 5px 5px 5px rgba(174, 197, 238, 0.405);
-    
+    text-decoration: underline;
 }
 
 #proceed:hover{
