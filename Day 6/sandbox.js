@@ -6,15 +6,19 @@ document.addEventListener("DOMContentLoaded", function (){
        console.log(y)
     if(x == y ){
         alert("You guessed the write Number " + y); 
-    }
-    else if(x > y){
-        alert("Sorry try again your choose a higher Number");
+        document.getElementById("message").innerHTML = "Congratulations! You guessed correctly.";
     }
     else if(x < y){
-        alert("Sorry try again choose a smaller Number");
+        alert("Sorry try again your choose a higher Number");
+        document.getElementById("message").innerHTML = "Congratulations! You guessed correctly.";
     }
+    else if(x > y){
+        alert("Sorry try again choose a smaller Number");
+        document.getElementById("message").innerHTML = "Congratulations! You guessed correctly.";
+    }
+   
     else{
-        alert("Please enter a value from 0-10");
+        document.getElementById("number").innerText += "Your guess must be between 1 and 10.";
     }
     }
 });

@@ -16,11 +16,15 @@ input{
     margin:10px;
     border-radius: 10px;
     border: none;
-    background: rgb(144, 197, 144);
+    background: aliceblue;
 }
-#number{
-    background:rgb(224, 213, 213);
+
+#guess{
+    background: rgb(154, 209, 154);
 }
 #guess:hover{
-    background: rgb(103, 167, 103);
+    background: rgb(56, 168, 56);
+}
+#p{
+    color: red;
 }
