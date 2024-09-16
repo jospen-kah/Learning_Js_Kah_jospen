@@ -1,0 +1,26 @@
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "poppins" sans-serif;
+}
+input{
+    width: 80%;
+    height:50px;
+    text-align: center;
+    margin:10px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(144, 197, 144);
+}
+#number{
+    background:rgb(224, 213, 213);
+}
+#guess:hover{
+    background: rgb(103, 167, 103);
+}
