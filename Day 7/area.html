@@ -3,39 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Area Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="area.js"></script>
 </head>
 <body>
+    <h1>Calculate Area</h1>
 <div class="container">
-    <select name="shapes" id="shapes">
-        <option value="circle" id="circle">Cirle</option>
-        <option value="square" id="square">Square</option>
-        <option value="triangle" id="triangle">Triangle</option>
-        <option value="rectangle" id="rectangle">Rectangle</option>
+    <label for="shapes">Choose a shape:</label>
+    <select id="shapes">
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="square">Square</option>
+        <option value="triangle">Triangle</option>
     </select>
+
     <button id="submit">Submit</button>
 
-  <label for="radius">Radius
-    <input type="text" id="radius" placeholder="Enter the Radius">
-</label>
-<label for="length">Length
-    <input type="text" id="length" placeholder="Enter the length"></label>
-<label for="width">Width
-      <input type="text" id="width" placeholder="Enter the width">
-</label> 
-<label for="base">Base
-    <input type="text" id="base" placeholder="Enter the Base">
-</label> 
-<label for="height">Height
-    <input type="text" id="height" placeholder="Enter the height">
-</label> 
-  
+    <div id="input-fields"></div>
+
     <button id="calculate">Calculate</button>
-    <p id="area">The area is :</p>
 
+    <h2>Area:</h2>
+    <div id="area"></div>
 
-</div>    
+    <script src="area.js"></script>
+</div>
 </body>
 </html>

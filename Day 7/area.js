@@ -1,114 +1,66 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    document.getElementById("submit").onclick = function() {
-       let x = document.getElementById("shapes").value;
-   if (x == "circle") { 
-      
-           // Remove length and width input fields
-           let lengthElem = document.getElementById("length");
-           let widthElem = document.getElementById("width");
-           let baseElem = document.getElementById("base");
-           let heightElem = document.getElementById("height");
-           
-           
-           if (lengthElem) lengthElem.remove();
-           if (widthElem) widthElem.remove();
-           if (baseElem) baseElem.remove();
-           if (heightElem) heightElem.remove();
-           
-          
-      
-  
-   document.getElementById("calculate").onclick = function() {
-       // Remove length and width input fields
-       let r = document.getElementById("radius").value;
-       const p = 22/7;
-       let area = p * r * r;
-       document.getElementById("area").innerHTML += area ;
-   
-   };
- 
- }
- //calcualing the area of the rectangle
-   else if(x == "rectangle")
-   {
-              // Remove length and width input fields
-              let radiusElem = document.getElementById("radius");
-              let baseElem = document.getElementById("base");
-              let heightElem = document.getElementById("height");
-              
-              if (radiusElem) radiusElem.remove();
-              if (baseElem) baseElem.remove();
-              if (heightElem) heightElem.remove();
-             
-             
-         
-     
-      document.getElementById("calculate").onclick = function() {
-          // Remove length and width input fields
-          let l = document.getElementById("length").value;
-          let w = document.getElementById("width").value;
-          let area =  l * w;
-          document.getElementById("area").innerHTML += area ;
-      
-      };
-   }
- 
- 
-   //calcualing the area of the rectangle
-   else if(x == "square")
-       {
-                  // Remove length and width input fields
-                  let radiusElem = document.getElementById("radius");
-                  let widthElem = document.getElementById("width");
-                  let baseElem = document.getElementById("base");
-                  let heightElem = document.getElementById("height");
-                  
-                  if (radiusElem) radiusElem.remove();
-                  if (widthElem) widthElem.remove();
-                  if (baseElem) baseElem.remove();
-                  if (heightElem) heightElem.remove();
-                 
-                 
-             
-         
-          document.getElementById("calculate").onclick = function() {
-              // Remove length and width input fields
-              let l = document.getElementById("length").value;
-              
-              let area =  l * l;
-              document.getElementById("area").innerHTML += area ;
-          
-          };
-       }
- //calculating the area of the triangle
-       else if(x == "triangle")
-           {
-                      // Remove radius, length and width input fields
-                      let radiusElem = document.getElementById("radius");
-                      let widthElem = document.getElementById("width");
-                      let lengthElem = document.getElementById("length");
-                      
-                      
-                      if (radiusElem) radiusElem.remove();
-                      if (widthElem) widthElem.remove();
-                      if (lengthElem) lengthElem.remove();
-                      
-                     
-                     
-                 
-             
-              document.getElementById("calculate").onclick = function() {
-                  // Remove length and width input fields
-                  let h = document.getElementById("height").value;
-                  let b = document.getElementById("base").value;
-                  
-                  let area =  (1/2)*b*h;
-                  document.getElementById("area").innerHTML += area ;
-              
-              };
-           };
- 
-    }
- });
- 
+document.addEventListener("DOMContentLoaded", function () {
+    const inputContainer = document.getElementById("input-fields");
+
+    document.getElementById("submit").onclick = function () {
+        let shape = document.getElementById("shapes").value;
+        // Clear previous inputs
+        inputContainer.innerHTML = ""; // Clear all previous input fields
+
+        // Based on the selected shape, create the appropriate input fields
+        if (shape === "circle") {
+            inputContainer.innerHTML = `
+                <label for="radius">Radius:</label>
+                <input type="number" id="radius" placeholder="Enter radius"><br>
+            `;
+
+            document.getElementById("calculate").onclick = function () {
+                let r = document.getElementById("radius").value;
+                const p = 22 / 7;
+                let area = p * r * r;
+                document.getElementById("area").innerHTML = area;
+            };
+        }
+        else if (shape === "rectangle") {
+            inputContainer.innerHTML = `
+                <label for="length">Length:</label>
+                <input type="number" id="length" placeholder="Enter length"><br>
+                <label for="width">Width:</label>
+                <input type="number" id="width" placeholder="Enter width"><br>
+            `;
+
+            document.getElementById("calculate").onclick = function () {
+                let l = document.getElementById("length").value;
+                let w = document.getElementById("width").value;
+                let area = l * w;
+                document.getElementById("area").innerHTML = area;
+            };
+        }
+        else if (shape === "square") {
+            inputContainer.innerHTML = `
+                <label for="length">Side Length:</label>
+                <input type="number" id="length" placeholder="Enter side length"><br>
+            `;
+
+            document.getElementById("calculate").onclick = function () {
+                let l = document.getElementById("length").value;
+                let area = l * l;
+                document.getElementById("area").innerHTML = area;
+            };
+        }
+        else if (shape === "triangle") {
+            inputContainer.innerHTML = `
+                <label for="base">Base:</label>
+                <input type="number" id="base" placeholder="Enter base"><br>
+                <label for="height">Height:</label>
+                <input type="number" id="height" placeholder="Enter height"><br>
+            `;
+
+            document.getElementById("calculate").onclick = function () {
+                let h = document.getElementById("height").value;
+                let b = document.getElementById("base").value;
+                let area = (1 / 2) * b * h;
+                document.getElementById("area").innerHTML = area;
+            };
+        }
+    };
+});
