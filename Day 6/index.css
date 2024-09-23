@@ -1,0 +1,30 @@
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "poppins" sans-serif;
+}
+input{
+    width: 80%;
+    height:50px;
+    text-align: center;
+    margin:10px;
+    border-radius: 10px;
+    border: none;
+    background: aliceblue;
+}
+
+#guess{
+    background: rgb(154, 209, 154);
+}
+#guess:hover{
+    background: rgb(56, 168, 56);
+}
+#p{
+    color: red;
+}

@@ -1,0 +1,26 @@
+header{
+    background: #2e354f;
+    color:#fff;
+    padding: 45px 0;
+}
+section{
+    padding:45px 0;
+}
+
+
+
+
+ img{
+    width:30%;
+}
+.container{
+    width:90%;
+    /* max-width: 500px; */
+    border : 2px solid magenta;
+    padding:5px;
+
+}
+#section-two{
+    background: #2e354f;
+    color:#fff
+}

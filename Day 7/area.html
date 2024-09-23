@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculate Area</h1>
+<div class="container">
+    <label for="shapes">Choose a shape:</label>
+    <select id="shapes">
+        <option value="--">--</option>
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="square">Square</option>
+        <option value="triangle">Triangle</option>
+    </select>
+
+    <button id="submit">Submit</button>
+
+    <div id="input-fields"></div>
+
+    <button id="calculate">Calculate</button>
+
+    <h2>Area:</h2>
+    <div id="area"></div>
+
+    <script src="area.js"></script>
+</div>
+</body>
+</html>
