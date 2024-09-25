@@ -85,6 +85,7 @@ one.addEventListener("click", function(){
 
   equal.addEventListener('click', function(){
     try{
+        
     screenContainer.textContent = eval(screenContainer.textContent);
     }
     catch{
