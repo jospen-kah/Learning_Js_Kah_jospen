@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scheduler</title>
+</head>
+<body>
+    <h1>Scheduler</h1>
+    <div class="container">
+        <div class="event-creation">
+            <h2 class="add-event">Add Event</h2>
+            <form class="event-form" id="event-form">
+                <input type="text" class="event" id="event" required placeholder="Enter a Task">
+                <input type="date" class="event-date" id="event-date" required>
+                <input type="time"  class="event-time" id="event-time" required>
+                <button type="submit" class="event-button" id="event-button">Submit</button>
+            </form>
+        </div>
+        <div class="event-container" id="event-container">
+            <h2>Event Table</h2>
+          <table id="event-table" class="event-table">
+            <tr>
+                <th>Events</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            <tr >
+
+            </tr>
+           </table>
+        </div>
+    </div>
+    <script src="sandbox.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
