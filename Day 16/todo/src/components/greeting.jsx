@@ -12,8 +12,6 @@ function TodoList(){
     
     function addTask(){
         if(newTask.trim() !==""){
-
-        
         setTasks(t => [...t, newTask]);
         setNewTask("");
         }
@@ -60,10 +58,10 @@ function TodoList(){
                <button className='delete-button' onClick={() => {deleteTask(index)}}>
                 Detete
                </button>
-               <button className='move-button' onClick={() => {moveEventUp(index)}}>
+               <button className='move-button-up' onClick={() => {moveEventUp(index)}}>
                     👆
                </button>
-               <button className='move-button' onClick={() => {moveEventDown(index)}}>
+               <button className='move-button-down' onClick={() => {moveEventDown(index)}}>
                     👇
                </button>
             </li>
