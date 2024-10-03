@@ -1,0 +1,55 @@
+.job-container{
+    width: 70vw;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+
+    margin: 1.3rem 0;
+    
+    .logo{
+        display: flex;
+        align-items:center;
+        padding-right: 1.5rem;
+    }
+
+    .part1{
+        display:flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .company{
+            .cname{
+                font-weight: 700;
+                color: rgb(109, 225, 233);
+                margin-right: 0.8rem;
+             
+            }
+            .new,.featured{
+                color:#fff;
+                background-color: rgb(22, 160, 170);
+                border-radius: 1rem;
+                padding: 0.4rem;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+
+            }
+            .featured{
+                background-color:var(--very-dark-greyish);
+            }
+        }
+
+        .position{
+            font-weight: 700;
+            display: inline-block;
+            font-size: 1.1rem;
+            padding: 0.7rem 0;
+        }
+        .details{
+
+        }
+    }
+}
