@@ -1,5 +1,5 @@
 .job-container{
-    width: 70vw;
+    width: 80vw;
     background-color: #fff;
 
     display: flex;
@@ -67,7 +67,8 @@
             font-weight: 700;
             padding: 0.5rem;
             border-radius: 5px;
-            cursor: p; 
+            cursor: pointer; 
+            margin-bottom:0.7rem;
         } 
     }
     }
