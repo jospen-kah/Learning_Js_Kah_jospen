@@ -35,10 +35,11 @@
                 font-size: 0.7rem;
                 font-weight: 700;
                 text-transform: uppercase;
+                margin-right:.5rem;
 
             }
             .featured{
-                background-color:var(--very-dark-greyish);
+                background-color:rgb(29, 28, 28);
             }
         }
 
@@ -49,7 +50,25 @@
             padding: 0.7rem 0;
         }
         .details{
-
+         color: rgb(29, 28, 28);
         }
     }
-}
+        .part2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+       
+        span{
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+            background-color: rgba(91, 189, 206, 0.192) ;
+            color:rgb(109, 225, 233);
+            font-weight: 700;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: p; 
+        } 
+    }
+    }
+

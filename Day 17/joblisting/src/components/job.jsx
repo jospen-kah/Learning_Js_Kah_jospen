@@ -42,16 +42,18 @@ const Job = (props) => {
          <div className="position">{position}</div>
          <div className="details">
             <span>{postedAt}</span>
+            <span>&<nbsp>.</nbsp></span>
             <span>{contract}</span>
+            <span>&<nbsp>.</nbsp></span>
             <span>{location}</span>
          </div>
       </div>
        <div className="part2">
          {
             keywords.map((key, id) =>(
-               <button onClick= {() => props.setKeywords(key)} key={id}>
+               <span className="jobs-list" onClick= {() => props.setKeywords(key)} key={id}>
                   {key}
-               </button>
+               </span>
             ))}
          </div>     
    </div>
