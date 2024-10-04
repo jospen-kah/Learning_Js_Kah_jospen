@@ -54,6 +54,9 @@ function TodoList(){
         <ol>
            {tasks.map((task, index) =>
             <li key={index}>
+                <input type="checkbox" onClick={(key) => {
+                    <strike>{key}</strike>
+                }}></input>
                 <span className="text">{task}</span>
                <button className='delete-button' onClick={() => {deleteTask(index)}}>
                 Detete
