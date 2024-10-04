@@ -49,7 +49,7 @@
     "company": "MyHome",
     "logo": "./images/myhome.svg",
     "new": false,
-    "featured": false,
+    "featured": true,
     "position": "Junior Frontend Developer",
     "role": "Frontend",
     "level": "Junior",

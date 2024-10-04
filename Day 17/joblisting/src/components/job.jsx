@@ -29,7 +29,9 @@ const Job = (props) => {
       }, {logo});
   
    return ( 
-   <div class="job-container">
+   <div class={
+      featured ? " job-container borderLeft" : "job-container"
+      }>
       <div className="logo">
       <img src={icon} alt="logo" />
       </div>
@@ -37,7 +39,7 @@ const Job = (props) => {
       <div className="company">
          <span><div className="cname">{company}</div></span>
             {props.data.new && <span className="new">New!</span>}
-            {props.data.new && <span className="featured">featured</span>}
+            {props.data.featured && <span className="featured">featured</span>}
          </div>
          <div className="position">{position}</div>
          <div className="details">

@@ -7,7 +7,7 @@ const Header = ({keywords, removeKeywords, clearAll }) => {
     <ul>
     {keywords.map( (key, id) => {
         return <li key={id}>
-          <button onClick={ () => removeKeywords(key)}>{key}
+          <button className="close" onClick={ () => removeKeywords(key)}>{key}
           <img src={close} alt="" />
           </button>
           </li>
