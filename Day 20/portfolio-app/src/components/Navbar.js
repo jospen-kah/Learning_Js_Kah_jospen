@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="nav-tag">
 
                 <NavLink 
-                   t0 = '/'
+                   to = '/'
                    className={({isActive}) => ( isActive? 'active-link': '')}
                    end
                 >

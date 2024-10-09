@@ -9,7 +9,7 @@ const About = () =>{
         <h2>About</h2>
         <div className="about-container1">
             <div className="profile-pic">
-            <img src="" alt="my profile"/>
+            <img src="./pp.png" alt="my profile"/>
             </div>
             <div className="me">  
                 <p>A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes of code, sculpting intangible structures that shape our technological world. With fingers poised 
