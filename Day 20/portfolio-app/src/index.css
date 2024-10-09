@@ -184,6 +184,13 @@ body {
             background-color: rgba(255, 255, 255, 0.04);
             border-radius: 5px;
             margin-bottom: 3rem;
+
+            img{
+                width:180px;
+                height: 180px;
+                margin: .6rem;
+                border-radius: 5px;
+            }
         }
     }
 
@@ -211,6 +218,11 @@ body {
             width: 400px;
             background-color: rgba(255, 255, 255, 0.04);
             border-radius: 50% 50% 0 0;
+
+            img{
+                height: 500px;
+                width:400px;
+            }
         }
 
         .me {
@@ -292,6 +304,13 @@ body {
             background-color: rgba(255, 255, 255, 0.04);
             border-radius: 10px;
             border: 1px solid #fff;
+
+            img{
+                border-radius: 10px;
+                width: 180px;
+                height: 160px;
+                margin: .6rem;
+            }
 
         }
     }
