@@ -139,7 +139,7 @@ body {
     }
 
     .Image {
-        background-color: rgba(255, 117, 5, 0.04);
+        /* background-color: rgba(255, 117, 5, 0.04); */
         width: 300px;
         height: 350px;
         display: flex;
@@ -150,7 +150,7 @@ body {
         img {
             width: 300px;
             height: 350px;
-            /* border-radius: 50%; */
+            border-radius: 50%;
            
             
         }
