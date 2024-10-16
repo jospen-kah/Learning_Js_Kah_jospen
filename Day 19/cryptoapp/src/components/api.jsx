@@ -45,19 +45,26 @@ const CryptoList = () => {
                 <tr>
                     <th>Coin</th>
                     <th>Price (USD)</th>
+                    <th>Time</th>
 
                 </tr>
             </thead>
             <tbody>
                 {cryptoData.map((coin, index) => (
+                    
                     <tr key={index}>
                         <td>{coin.asset_id_base}</td>
                         <td>${coin.rate}</td>
+                        <td>${coin.time}</td>
                         
                     </tr>
                 ))}
             </tbody>
         </table>
+
+        <div>
+                        <h2>successfully fetched</h2>
+                    </div>
     </div>
     )
 }
