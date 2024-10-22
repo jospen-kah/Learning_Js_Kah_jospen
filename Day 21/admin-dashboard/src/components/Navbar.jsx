@@ -1,4 +1,4 @@
-import { ChevronDown, Volleyball, Gauge, Droplet, Pencil, Puzzle, MousePointer2, BookText, Star, Bell, Calculator, Grid3x3, Layers, Map, Calendar, PieChart } from 'lucide-react';
+import { ChevronDown, Volleyball, Gauge, Droplet, Pencil, Puzzle, MousePointer2, BookText, Star, Bell, Calculator, Grid3x3, Map, Calendar, PieChart } from 'lucide-react';
 import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 

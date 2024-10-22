@@ -1,6 +1,6 @@
 const Color = () => {
   return (
-    <div className="content">
+    <div className="main-content">
       <h1>Color Page</h1>
       <p>This is the color page. You can put your content here.</p>
     </div>
