@@ -12,7 +12,7 @@ const Header = () => {
                 </div>
                 <div className="search-bar">
                     <Search color="#6b7785" size={24} />
-                    <input placeholder='Search' />
+                    <input onClick={{}} placeholder='Search' />
                 </div>
                 <div className="bar-content">
                     <div className="notification" ><Bell />
@@ -26,7 +26,9 @@ const Header = () => {
                     
                     <div className="mode"  ><SunMedium /></div>
                     {/* {theme === 'light' ? '🌞 Light Mode' : '🌙 Dark Mode'} */}
-                    <div className="profile-picture" ></div>
+                    <div className="profile-picture" >
+                        <img src='./user.jpeg'/>
+                    </div>
                     <div className="agenda" ><Grip /></div>
                 </div>
             </div>

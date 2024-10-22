@@ -1,16 +1,27 @@
+import  AreaChart  from "./page/Areachart";
+
 // import React from "react";
 const Content = () => {
   return (
     <div className="main-content">
-      <h1>Dashboard</h1>
-      <a href="https://coreui.io/">Home</a>
-    <div className="content">
-      
+    
+    <div className= "content">
+        <h1> Dashboard </h1>
+      <a href="https://coreui.io/"> Home</a>
     
       <div className="dashboard-content">
         <div className="content-1">
           <div className="sales-container">
-            <div className="sales">sales</div>
+            <div className="sales">
+              <div className="sales-1">
+                <div className="sale-month">
+                  <h4>Sale</h4>
+                  <p className= "month">January - July 2024</p>
+                </div>
+                <h4 className="price">$613.200</h4>
+              </div>
+              <div className="graph"><AreaChart /></div>
+            </div>
             <div className="cust-order">
               <div className="customer">customer</div>
               <div className="customer">order</div>
