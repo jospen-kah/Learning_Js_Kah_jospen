@@ -45,7 +45,6 @@ const AreaChart = () => {
       },
     },
   };
-
   return <Line data={data} options={options} />;
 };
 
