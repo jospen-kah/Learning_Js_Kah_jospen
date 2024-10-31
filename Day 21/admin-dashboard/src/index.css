@@ -443,7 +443,7 @@ body {
       display: flex;
       justify-content: space-between;
 
-      .user {
+      .users {
         width: 70%;
         height: 100%;
         background-color: #fff;
@@ -667,6 +667,7 @@ body {
           .traffic-chart{
          padding-bottom:1rem;
          padding-right:2rem;
+         padding-left:2rem;
          height:90%;
          
         }

@@ -59,7 +59,33 @@ const Content = () => {
 
 
           <div className="content-2">
-            <div className="user">user</div>
+            <div className="users">
+              <div className="user">
+                <div className="reguser">
+                <h5>User</h5>
+                <h6>1.232.150 register users</h6>
+                </div>
+                <div className="adduser">Add User</div>
+              </div>
+              <div className="table">
+              <table>
+                  <thead>
+                    <tr>
+                      <th>userIcon</th>
+                      <th>Users</th>
+                      <th>Country</th>
+                      <th>Usage</th>
+                      <th>Activity</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr></tr>
+                  </tbody>
+
+              </table>
+              </div>
+            </div>
             <div className="rate">
               <div className="user-rate">user-rate</div>
               <div className="conversion">convrsion</div>
