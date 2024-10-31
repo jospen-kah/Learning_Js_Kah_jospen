@@ -61,17 +61,19 @@ const Content = () => {
           <div className="content-2">
             <div className="users">
               <div className="user">
-                <div className="reguser">
+                <div className="reg-user">
                 <h5>User</h5>
                 <h6>1.232.150 register users</h6>
                 </div>
-                <div className="adduser">Add User</div>
+                <div className="adduser">
+                  Add User
+                  </div>
               </div>
               <div className="table">
               <table>
                   <thead>
                     <tr>
-                      <th>userIcon</th>
+                      <th><UsersRound /></th>
                       <th>Users</th>
                       <th>Country</th>
                       <th>Usage</th>
