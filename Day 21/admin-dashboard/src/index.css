@@ -702,22 +702,11 @@ body {
           /* background-color: #d69112; */
           display: flex;
           justify-content: space-between;
-          flex-direction: column;
+          flex-direction: flex;
 
-          
+          .user-rate,
+          .conversion,
           .session {
-            height: 100%;
-            width: 30%;
-            background-color: #fff;
-            border-radius: 7px;
-          }
-          .user-rate{
-            height: 100%;
-            width: 30%;
-            background-color: #fff;
-            border-radius: 7px;
-          }
-          .conversion{
             height: 100%;
             width: 30%;
             background-color: #fff;
