@@ -704,9 +704,20 @@ body {
           justify-content: space-between;
           flex-direction: column;
 
-          .user-rate,
-          .conversion,
+          
           .session {
+            height: 100%;
+            width: 30%;
+            background-color: #fff;
+            border-radius: 7px;
+          }
+          .user-rate{
+            height: 100%;
+            width: 30%;
+            background-color: #fff;
+            border-radius: 7px;
+          }
+          .conversion{
             height: 100%;
             width: 30%;
             background-color: #fff;
