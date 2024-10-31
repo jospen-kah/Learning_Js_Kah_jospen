@@ -22,6 +22,7 @@ const AreaChart = () => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false, // Allows the chart to adjust with the container size
     plugins: {
       tooltip: {
         enabled: true, // Tooltips appear on hover
@@ -45,7 +46,12 @@ const AreaChart = () => {
       },
     },
   };
-  return <Line data={data} options={options} />;
+
+  return (
+    <div style={{ width: '100%', height:'100%'}}>
+      <Line data={data} options={options} />
+    </div>
+  );
 };
 
 export default AreaChart;

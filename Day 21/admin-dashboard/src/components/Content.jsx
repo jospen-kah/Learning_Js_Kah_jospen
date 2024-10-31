@@ -11,7 +11,7 @@ const Content = () => {
         <h1> Dashboard </h1>
         <a href="https://coreui.io/"> Home</a>
 
-        <div className="dashboard-content">
+        
           <div className="content-1">
             <div className="sales-container">
               <div className="sales">
@@ -69,7 +69,7 @@ const Content = () => {
 
 
           <div className="content-3"></div>
-        </div>
+       
       </div>
 
     </div>
