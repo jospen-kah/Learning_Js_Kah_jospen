@@ -667,7 +667,8 @@ body {
           .traffic-chart{
          padding-bottom:1rem;
          padding-right:2rem;
-         padding-left:2rem;
+         padding-left:5rem;
+         padding-bottom: 5rem;
          height:90%;
          
         }
