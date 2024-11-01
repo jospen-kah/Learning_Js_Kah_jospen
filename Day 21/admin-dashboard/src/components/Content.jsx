@@ -1,6 +1,7 @@
 import AreaChart from "./page/Areachart";
 import TrafficChart from "./page/traffic-chart";
 import { UsersRound, MoveDown, MoveUp } from "lucide-react";
+import Flag from 'react-world-flags';
 
 // import React from "react";
 const Content = () => {
@@ -74,15 +75,72 @@ const Content = () => {
                   <thead>
                     <tr>
                       <th><UsersRound /></th>
-                      <th>Users</th>
+                      <th className="users-1">Users</th>
                       <th>Country</th>
-                      <th>Usage</th>
-                      <th>Activity</th>
+                      <th className="usage">Usage</th>
+                      <th className="activity">Activity</th>
                     </tr>
                   </thead>
 
                   <tbody>
-                    <tr></tr>
+
+                    {/* first user */}
+                    <tr>
+                      <td>
+                      <div className="profile-picture" >
+                        <img src='./user.jpeg'/>
+                    </div>
+                      </td>
+                      <td>
+                        <div className="names">Yiorgos Avraamu</div>
+                        <div className="register">New | Registered: jan 1, 2023</div>
+                      </td>
+                      <td>
+                        <Flag code="US" style={{ width: 25, height: 20 }} />
+                        </td>
+                      <td>
+                        <div className="progress">
+                          <h4>50%</h4>
+                          <p>Jun 11, 2023 - Jul 10, 2023</p>
+                        </div>
+                        <div className="bar">
+                          <div className="bar-progress"></div>
+                        </div>
+                      </td>
+                      <td>
+                        <div>Last Login</div>
+                        <div className="time">10 sec ago</div>
+                      </td>
+                    </tr>
+
+                    {/* second user */}
+                    <tr>
+                      <td>
+                      <div className="profile-picture" >
+                        <img src='./user.jpeg'/>
+                    </div>
+                      </td>
+                      <td>
+                        <div className="names">Yiorgos Avraamu</div>
+                        <div className="register">New | Registered: jan 1, 2023</div>
+                      </td>
+                      <td>
+                        <Flag code="BR" style={{ width: 25, height: 20 }} />
+                        </td>
+                      <td>
+                        <div className="progress">
+                          <h4>22%</h4>
+                          <p>Jun 11, 2023 - Jul 10, 2023</p>
+                        </div>
+                        <div className="bar">
+                          <div className="bar-progress-2"></div>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="login">Last Login</div>
+                        <div className="time">5 minutes ago</div>
+                      </td>
+                    </tr>
                   </tbody>
 
               </table>

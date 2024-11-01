@@ -7,7 +7,7 @@ const Header = () => {
         <div className='main-header'>
             <div className="headers">
                 <div className='menu'>
-                    <Menu color="#6b7785" size={24} />
+                    < Menu color="#6b7785" size={24} />
                 </div>
                 <div className="search-bar">
                     <Search color="#6b7785" size={24} />
