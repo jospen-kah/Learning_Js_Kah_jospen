@@ -253,16 +253,20 @@ body {
     /* background-color: aqua; */
     margin-right: .8rem;
 
+
+
     img {
       width: 40px;
       height: 40px;
       border-radius: 50%;
     }
+
+
   }
 
   margin-top: 70px;
   margin-left: 250px;
-  width: calc(100% - 300px);
+  width: calc(100% - 330px);
   display: flex;
   flex-direction: column;
   /* padding-left: 5rem; */
@@ -285,7 +289,6 @@ body {
     /* background-color: #212631; */
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
 
     .content-1 {
       margin-bottom: 2rem;
@@ -424,6 +427,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: start;
+        padding-top: 2rem;
+        ;
 
 
         .traffic-date {
@@ -445,16 +450,15 @@ body {
 
         .traffic-chart {
           width: 100%;
-          height: 75%;
           padding-right: 1rem;
-          margin-bottom: 1.5rem;
+          margin-top: -1.3rem;
         }
       }
     }
 
     .content-2 {
       width: 100%;
-      Height: 500px;
+      Height: 00px;
       /* background-color: #a89292; */
       display: flex;
       justify-content: space-between;
@@ -500,31 +504,49 @@ body {
           }
         }
 
-        .table {
+        .tables {
+          position: relative;
           width: 100%;
-          
 
           table {
-            width: 100%;
-            padding-left:1rem;
-            padding-right: 1rem; 
 
-            .time{
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+
+
+            .time {
               font-weight: bolder;
             }
 
             th,
             td {
-              border-bottom: 1px solid #2126316f;
-              
-              padding-bottom: .5rem;
 
+              border-bottom: 1px solid #2126316f;
+              padding-bottom: .5rem;
             }
-           
+
+            td {
+              position: relative;
+
+              .online {
+                position: absolute;
+                left: 52%;
+                top: 60%;
+                bottom: 10%;
+                width: 10px;
+                height: 10px;
+                background-color: red;
+                border-radius: 50%;
+              }
+            }
+
             .users-1,
             .names,
             .register,
-            .usage {
+            .usage,
+            .activity {
               text-align: left;
             }
 
@@ -547,6 +569,7 @@ body {
                 background-color: rgb(32, 194, 40);
                 border-radius: 2px;
               }
+
               .bar-progress-2 {
                 width: 22%;
                 height: 100%;
@@ -554,9 +577,30 @@ body {
                 border-radius: 2px;
               }
 
+              .bar-progress-3 {
+                width: 74%;
+                height: 100%;
+                background-color: rgba(224, 189, 13, 0.857);
+                border-radius: 2px;
+              }
+
+              .bar-progress-4 {
+                width: 98%;
+                height: 100%;
+                background-color: rgba(111, 111, 111, 0.857);
+                border-radius: 2px;
+              }
+
+              .bar-progress-5 {
+                width: 23%;
+                height: 100%;
+                background-color: rgba(37, 185, 212, 0.857);
+                border-radius: 2px;
+              }
+
             }
 
-           
+
           }
         }
       }
@@ -793,7 +837,7 @@ body {
         justify-content: space-between;
         width: 100%;
 
-        height: 500px;
+        height: 700px;
         flex-wrap: wrap;
         justify-content: space-between;
 
@@ -801,13 +845,13 @@ body {
         .users {
           /* background-color: #efa9a9; */
           width: 100%;
-          height: 65%;
+          height: 72%;
 
         }
 
         .rate {
           width: 100%;
-          height: 33%;
+          height: 26%;
           /* background-color: #d69112; */
           display: flex;
           justify-content: space-between;
@@ -857,7 +901,7 @@ body {
 /* mobile Mode */
 @media(max-width: 481px) {
   .footer {
-    width: 125%;
+    width: 120%;
     margin-left: -2rem;
 
   }
@@ -869,14 +913,14 @@ body {
     top: 0;
     right: 0 !important;
     left: 10px;
-    width: 100%;
+    width: 90%;
 
 
 
     .headers {
       .menu {
         display: inline;
-        margin-left: .5rem;
+        margin-left: 1rem;
       }
 
       .search-bar,
@@ -885,6 +929,7 @@ body {
       .notification {
         display: none;
       }
+
     }
 
   }
@@ -993,14 +1038,21 @@ body {
         }
 
         .traffic {
+
           margin-top: 6rem;
           align-items: center;
           background-color: #fff;
           border-radius: 7px;
-          height: 250px;
+          height: 200px;
           width: 100%;
           box-shadow: 0 5px 5px 5px rgba(214, 213, 213, 0.37);
 
+          .traffic-chart {
+
+            margin-top: 1rem;
+            height: 90%;
+
+          }
 
 
         }
@@ -1010,40 +1062,182 @@ body {
       .content-2 {
         margin-top: 2rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         width: 100%;
 
-        height: 500px;
+        height: 1300px;
         flex-wrap: wrap;
         justify-content: space-between;
 
 
-        .user {
-          /* background-color: #efa9a9; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .users {
           width: 100%;
-          height: 55%;
-
-
+          height: 65%;
+          background-color: #fff;
+          border-radius: 7px;
+          box-shadow: 0 2px 10px rgb(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+  
+          .user {
+            /* background-color: rgb(190, 112, 112); */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 20%;
+  
+            .reg-user {
+              text-align: left;
+              margin-left: 1rem;
+  
+              h6 {
+                margin-top: -1rem;
+              }
+            }
+  
+            .adduser {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 2rem;
+              background-color: #6b7785;
+              margin-top: 2rem;
+              width: 150px;
+              height: 40px;
+              text-align: center;
+              border-radius: 5px;
+              padding-top: .2rem;
+              color: #fff;
+            }
+          }
+  
+          .tables {
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+            overflow-x:scroll ;
+            
+  
+            table {
+  
+              width: 100%;
+              padding-left: 1rem;
+              padding-right: 1rem;
+  
+  
+  
+              .time {
+                font-weight: bolder;
+              }
+  
+              th,
+              td {
+  
+                border-bottom: 1px solid #2126316f;
+                padding-bottom: .5rem;
+              }
+  
+              td {
+                position: relative;
+  
+                .online {
+                  position: absolute;
+                  left: 52%;
+                  top: 60%;
+                  bottom: 10%;
+                  width: 10px;
+                  height: 10px;
+                  background-color: #fff;
+                  border-radius: 50%;
+                }
+              }
+  
+              .users-1,
+              .names,
+              .register,
+              .usage,
+              .activity {
+                text-align: left;
+              }
+  
+              .progress {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+  
+              .bar {
+                margin-top: -.7rem;
+                width: 100%;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #6b778588;
+  
+                .bar-progress {
+                  width: 50%;
+                  height: 100%;
+                  background-color: rgb(32, 194, 40);
+                  border-radius: 2px;
+                }
+  
+                .bar-progress-2 {
+                  width: 22%;
+                  height: 100%;
+                  background-color: rgba(230, 40, 27, 0.857);
+                  border-radius: 2px;
+                }
+  
+                .bar-progress-3 {
+                  width: 74%;
+                  height: 100%;
+                  background-color: rgba(224, 189, 13, 0.857);
+                  border-radius: 2px;
+                }
+  
+                .bar-progress-4 {
+                  width: 98%;
+                  height: 100%;
+                  background-color: rgba(111, 111, 111, 0.857);
+                  border-radius: 2px;
+                }
+  
+                .bar-progress-5 {
+                  width: 23%;
+                  height: 100%;
+                  background-color: rgba(37, 185, 212, 0.857);
+                  border-radius: 2px;
+                }
+  
+              }
+  
+  
+            }
+          }
         }
-
+  
         .rate {
           width: 100%;
-          height: 45%;
+          height: 50%;
           /* background-color: #d69112; */
           display: flex;
           justify-content: space-between;
           align-items: center;
           flex-direction: column;
+          background-color: #fff;
 
 
           .user-rate,
           .conversion,
           .session {
             margin-top: .5rem;
-            height: 31%;
+            height: 150px;
             width: 100%;
-            background-color: #fff;
+            background-color: #745454;
             border-radius: 7px;
           }
         }

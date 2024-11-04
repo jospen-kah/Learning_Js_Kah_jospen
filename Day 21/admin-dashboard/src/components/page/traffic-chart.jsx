@@ -90,7 +90,7 @@ const BarChart = () => {
 
   return(
     <div style={{ width: '100%'}}>
-       < Bar options={options} data={data} />;
+       < Bar options={options} data={data} />
        </div>
        )
 };
